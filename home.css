@@ -11,7 +11,6 @@
         body {
             font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
             background: #F6F9F5;
-
         }
 
         /* ========= NAVBAR ========= */
@@ -97,7 +96,6 @@
                 justify-content: center;
                 gap: 1.2rem;
             }
-
         }
 
         /* ========= HERO SECTION ========= */
@@ -174,6 +172,7 @@
             margin-top: 3rem;
             transition: all 0.3s ease;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            display: inline-block;
         }
 
         .more-details-button:hover {
@@ -209,9 +208,10 @@
             border-radius: 2px;
         }
 
+        /* 3 columns on desktop, 2 on tablet, 1 on mobile */
         .services-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
 
@@ -252,6 +252,20 @@
         .services-container p {
             color: #4a6a73;
             line-height: 1.5;
+        }
+
+        /* Tablet: 2 columns */
+        @media (max-width: 900px) {
+            .services-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile: 1 column */
+        @media (max-width: 600px) {
+            .services-container {
+                grid-template-columns: 1fr;
+            }
         }
 
         /* ========= OUR TEAM SECTION ========= */
@@ -387,8 +401,5 @@
             .footer {
                 flex-direction: column;
                 text-align: center;
-            }
-            .services-container {
-                grid-template-columns: 1fr;
             }
         }
