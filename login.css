@@ -16,9 +16,7 @@
             align-items: center;
             justify-content: center;
         }
-        .hr{
-            color: #035772;
-        }
+        
         /* ========= LOGIN CARD ========= */
         .login-container {
             width: 100%;
@@ -65,23 +63,6 @@
             margin-top: 5px;
         }
 
-        .login-title {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .login-title h1 {
-            font-size: 1.8rem;
-            color: #035772;
-            margin-bottom: 0.5rem;
-        }
-
-        .login-title p {
-            color: #6b8c96;
-            font-size: 0.9rem;
-        }
-
-        /* Form Styles */
         .input-group {
             margin-bottom: 1.5rem;
         }
