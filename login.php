@@ -15,19 +15,12 @@ include ("login-connect.php");
 
 <div class="login-container">
     <div class="login-card">
-        <!-- Logo -->
         <div class="login-logo">
             <div class="text-logo">SGM</div>
             <div class="logo-sub">Students Grades Management </div>
         </div>
-       <hr class="hr">
-        <!-- Title -->
-        <div class="login-title">
-            <h1>Welcome </h1>
-            <p>Sign in to have access </p>
-        </div>
 
-        <!-- Login Form -->
+
         <form action="login-logic.php" method="post">
             <div class="input-group">
                 <label>Email Address</label>
@@ -48,7 +41,6 @@ include ("login-connect.php");
             </button>
         </form>
 
-        <!-- Back to Home -->
         <div class="back-home">
             <a href="home.html">
                 <i class="fa-solid fa-arrow-left"></i> Back to Home
